@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triangle Animation</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+      }
+
+      .triangle {
+        height: 0;
+        width: 0;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-bottom: 100px solid #b92b12;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        animation: moveDiagonal 4s infinite alternate ease-out;
+      }
+      @keyframes moveDiagonal {
+        0% {
+          top: 0;
+          left: 0;
+        }
+        100% {
+          top: calc(100vh - 160px);
+          left: calc(100vw - 30px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="triangle"></div>
+  </body>
+</html>
