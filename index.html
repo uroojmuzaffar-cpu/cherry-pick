@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("https://img.freepik.com/free-photo/laptop-office-plant-black-background-top-view_169016-34505.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 25px white;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        gap: 0.9rem;
+        width: 50vw;
+        border-radius: 1rem;
+
+    }
+
+    input{
+        padding: 1rem;
+        width: 40vw;
+        border-radius: 0.4rem;
+        border: 1px solid grey;
+    }
+
+    select{
+        padding: 1rem;
+          width: 42.5vw;
+        border-radius: 0.4rem;
+        border: 1px solid grey;
+    }
+
+    textarea{
+        width: 37vw;
+        padding: 2rem;
+        border-radius: 0.4rem;
+        border: 1px solid grey;
+    }
+
+    button{
+        width: 30vw;
+        padding: 1rem;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        font-size: 1rem;
+    }
+
+    button:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <form>
+        <input type="text" placeholder="Enter Your Name" required>
+        <input type="email" placeholder="Enter Your Email" required>
+        <input type="number" placeholder="Enter Your Age" required min="14" max="100">
+        <input type="password" placeholder="Enter Your Password" required maxlength="10">
+        <input type="date" placeholder="Enter Your D.O.B" required>
+        <select required>
+            <option>Choose Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select> 
+        <textarea placeholder="About Yourself" required></textarea> 
+        <button>Submit</button>
+        
+    </form>
+</body>
+</html>
